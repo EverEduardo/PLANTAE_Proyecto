@@ -22,8 +22,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.349" />
 
+
     <EditText
-        android:id="@+id/correo"
+        android:id="@+id/usuario"
         android:layout_width="266dp"
         android:layout_height="45dp"
         android:ems="10"
@@ -32,10 +33,9 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/contrasena"
@@ -48,8 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/correo"
-        app:layout_constraintVertical_bias="0.041" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
 
     <TextView
         android:id="@+id/pregunta"
@@ -67,21 +67,21 @@
 
 
     <Button
-        android:id="@+id/btn_irmenu"
+        android:id="@+id/btn_IniciarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:backgroundTint="@color/green_btn"
         android:fontFamily="sans-serif-black"
-        android:onClick="irMenu"
-        android:text="Iniciar Sesión"
+        android:onClick="iniciarSeson"
+        android:text="Iniciar sesión"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.653" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageView
         android:id="@+id/logo"

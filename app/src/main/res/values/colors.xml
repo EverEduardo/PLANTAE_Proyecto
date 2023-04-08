@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green_btn">#72AD58</color>
     <color name="text_form">#7E7B7B</color>
+    <color name="btn_cancelar">#E91C1C</color>
 </resources>
