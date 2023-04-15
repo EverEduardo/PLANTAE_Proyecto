@@ -10,4 +10,7 @@
     <color name="green_btn">#72AD58</color>
     <color name="text_form">#7E7B7B</color>
     <color name="btn_cancelar">#E91C1C</color>
+    <color name="editText_hind">#A9A9A9</color>
+    <color name="gris_oscuro">#4B4B4B</color>
+    <color name="btn_cerrarSesion">#153335</color>
 </resources>

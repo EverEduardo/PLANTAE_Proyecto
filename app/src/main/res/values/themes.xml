@@ -15,5 +15,12 @@
 
 
     </style>
+    <style name="Theme.Pruebas_PLANTAE.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Pruebas_PLANTAE.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Pruebas_PLANTAE.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

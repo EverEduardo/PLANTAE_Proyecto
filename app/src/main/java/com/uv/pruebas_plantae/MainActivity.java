@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,13 +34,20 @@ public class MainActivity extends AppCompatActivity {
         String u= user.getText().toString();
         String c= pass.getText().toString();
         if(u.equals("")||c.equals("")){
-            Toast.makeText(this, "Error: Campos vacios", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Error: Campos vacios", Toast.LENGTH_SHORT).show();
         } else if (dao.login(u,c)==1) {
-            Toast.makeText(this, "Datos correctos", Toast.LENGTH_LONG).show();
+            Usuario ux = dao.getUsuario(u,c);
+            Toast.makeText(this, "Datos correctos", Toast.LENGTH_SHORT).show();
             Intent i3 = new Intent(this, Barra_navegacion.class);
+            i3.putExtra("Id", ux.getIdUsuario());
             startActivity(i3);
+            //agregar limpiar campos
+            EditText editText = findViewById(R.id.usuario);
+            editText.setText("");
+            EditText editText1 = findViewById(R.id.contrasena);
+            editText1.setText("");
         }else{
-            Toast.makeText(this, "Usuario y/o contraseña incorrecta", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Usuario y/o contraseña incorrecta", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -48,11 +56,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void irRegistro(View view){
+    public void irRegistro(View view) {
         Intent i = new Intent(this, Registro.class);
         startActivity(i);
     }
-
 
 
 

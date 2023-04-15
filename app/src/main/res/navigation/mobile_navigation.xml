@@ -29,10 +29,12 @@
         android:label="@string/title_plagas"
         tools:layout="@layout/fragment_plagas" />
 
+
     <fragment
         android:id="@+id/navigation_objetivos"
         android:name="com.uv.pruebas_plantae.ui.Objetivos.Objetivos"
         android:label="@string/title_objetivos"
         tools:layout="@layout/fragment_objetivos" />
+
 
 </navigation>
